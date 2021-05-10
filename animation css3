@@ -4,20 +4,18 @@
        background-color: rgba(6, 129, 12, 0.623);
    }
    
-   #pozycja
-   {
-    position: absolute;
-    margin-top: 50%;
-    margin-left: 50%;
-   }
+  
    #scena 
    {
-       Width: 200px;
+       width: 200px;
        height: 200px;
        border: none;
-       
-       position: relative;
+       position: absolute;
+       top: 50%;
+       left: 50%;
        perspective: 300px;
+       margin-right: -50%;
+       transform: translate(-50%, -50%)
    
    }
    #kostka
@@ -26,7 +24,7 @@
        transform-style: preserve-3d;
        width: 100%;
        height: 100%;    
-       animation: obrot 10s infinite alternate;
+       animation: obrot 8s infinite alternate;
    }
    .sciana
    {
